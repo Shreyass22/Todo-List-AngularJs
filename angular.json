@@ -6,7 +6,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "cwh-todo-list": {
+    "todo-list": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -16,7 +16,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/cwh-todo-list",
+            "outputPath": "dist/todo-list",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "cwh-todo-list:build"
+            "browserTarget": "todo-list:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "cwh-todo-list:build:production"
+              "browserTarget": "todo-list:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "cwh-todo-list:build"
+            "browserTarget": "todo-list:build"
           }
         },
         "test": {
@@ -114,16 +114,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "cwh-todo-list:serve"
+            "devServerTarget": "todo-list:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "cwh-todo-list:serve:production"
+              "devServerTarget": "todo-list:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "cwh-todo-list"
+  "defaultProject": "todo-list"
 }
