@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'todo-list';
+  title = 'cwh-todo-list';
+  constructor(){
+  //   setTimeout(() => {
+  //     this.title = "Changed title";
+  // }, 2000);
+  
+  }
 }
